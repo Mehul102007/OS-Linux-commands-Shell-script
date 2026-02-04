@@ -23,7 +23,7 @@ Testing the commands for the desired output.
 # COMMANDS:
 ### Create the following files file1, file2 as follows:
 cat > file1
-```
+```https://private-user-images.githubusercontent.com/227094966/544909204-7f7c2fc1-fb12-417c-bccc-7cb83a46dad2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzAyMDI3MTMsIm5iZiI6MTc3MDIwMjQxMywicGF0aCI6Ii8yMjcwOTQ5NjYvNTQ0OTA5MjA0LTdmN2MyZmMxLWZiMTItNDE3Yy1iY2NjLTdjYjgzYTQ2ZGFkMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIwNFQxMDUzMzNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NzIxZmMwNjg0ZjkzYmE3OTA3NGMwY2IyYWE2NWM5YTlkYzFiOWRiMDQ3ZjI2YjBiY2RmNTQ3YTEwYmNjMTNlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.8O9ELLYvRdJACMrZv2e7EGP6aNS_N_FqNTetkP7XcbA
 mehul
 narayanan
 ^d
@@ -1121,7 +1121,8 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-![Uploading image.png…]()
+<img width="626" height="138" alt="image" src="https://github.com/user-attachments/assets/56a06e69-b332-4d7a-8210-dccbf3943315" />
+
 
 
  cat exread1.sh
@@ -1135,6 +1136,7 @@ $ chmod 755 exread1.sh
 
 ## OUTPUT
 
+<img width="629" height="288" alt="image" src="https://github.com/user-attachments/assets/e381c2a8-4580-4edb-bc7a-c520431dcc93" />
 
 
 $ ./exread1.sh 
@@ -1155,10 +1157,12 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
- ./funcex.sh 
+ ./funcex.sh <img width="653" height="49" alt="image" src="https://github.com/user-attachments/assets/791f2f18-10b4-4ca6-b498-1081b773e19b" />
+
 
  
- ./funcex.sh 1 2
+ ./funcex.sh 1 2<img width="653" height="49" alt="image" src="https://github.com/user-attachments/assets/f8d70598-df8d-43c4-af69-cd52813b3256" />
+
 
  
 cat argshift.sh
@@ -1172,6 +1176,9 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
+
+<img width="656" height="90" alt="image" src="https://github.com/user-attachments/assets/64a56b54-8dd4-4f41-a260-8c0be27e61b0" />
+
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
@@ -1189,6 +1196,8 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
+<img width="656" height="90" alt="image" src="https://github.com/user-attachments/assets/c7384ff1-6577-47db-a0e2-17341ed76804" />
+
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1203,7 +1212,9 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+
+ <img width="656" height="330" alt="image" src="https://github.com/user-attachments/assets/ad86aaf7-5658-44e0-a51b-745009406701" />
+
  
 cat > nc.awk
 ```bash
@@ -1234,7 +1245,9 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+
+ <img width="654" height="315" alt="image" src="https://github.com/user-attachments/assets/c16b98d4-446f-470f-848c-b02104d73ba4" />
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1261,6 +1274,7 @@ else
 fi
 ```
 ## OUTPUT 
+<img width="655" height="93" alt="image" src="https://github.com/user-attachments/assets/adc2ef10-ab38-40b2-a893-9bff542513ef" />
 
 
 # RESULT:
