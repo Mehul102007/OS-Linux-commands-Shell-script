@@ -42,13 +42,19 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+```
+mehul
+narayan
 
-
-
+```
 cat < file2
 ## OUTPUT
+```
 
+aishu
+toji
 
+```
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
