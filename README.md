@@ -201,6 +201,7 @@ egrep -w 'Hello|hello' newfile
 ## OUTPUT
 
 
+<img width="161" height="43" alt="image" src="https://github.com/user-attachments/assets/4c5c9573-f268-43b2-ac06-335359c90695" />
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
