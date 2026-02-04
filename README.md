@@ -303,16 +303,7 @@ sed  -e '2s/Ram/Sita/' file23
 ```
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-```
-1001 | Ram | 10000 | HR
-1001 | Ram | 10000 | HR
-1002 | tom |  6000 | Admin
-1003 | Joe |  7000 | Developer
-1005 | Sam |  5000 | HR
-1004 | Sit |  7000 | Dev
-1003 | Joe |  7000 | Developer
-1001 | Ram | 10000 | HR
-```
+c
 sed -n -e '1,5p' file23
 ## OUTPUT
 ```
@@ -929,11 +920,7 @@ done
  ```
  
 $ chmod 755 forin2.sh
-$ ./forin2.sh
-
- ## output:
- <img width="633" height="134" alt="image" src="https://github.com/user-attachments/assets/409e7fe8-94ae-4ee2-8e0f-eae54ed0c8f0" />
-
+ 
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -946,9 +933,7 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
-## output:
-<img width="633" height="134" alt="image" src="https://github.com/user-attachments/assets/3226afca-47d8-4f6e-9101-f083d7470cf3" />
-
+ 
 cat forin3.sh 
 ```bash
 \#!/bin/bash
