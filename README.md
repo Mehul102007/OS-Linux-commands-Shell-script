@@ -989,6 +989,7 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+<img width="629" height="198" alt="image" src="https://github.com/user-attachments/assets/9f849406-1654-4420-815b-257a6ad355c4" />
 
 
 
@@ -1014,6 +1015,7 @@ Khammam
 
 ## OUTPUT
 
+<img width="629" height="198" alt="image" src="https://github.com/user-attachments/assets/7f81ab3a-ee4b-4797-9b0a-b5e4abc9147d" />
 
 cat forctype.sh 
 ```bash
@@ -1027,6 +1029,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+<img width="633" height="134" alt="image" src="https://github.com/user-attachments/assets/62fdd41d-da26-41ad-b649-a62b50883849" />
 
 cat forctype1.sh 
 ```bash
@@ -1040,6 +1043,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+<img width="633" height="134" alt="image" src="https://github.com/user-attachments/assets/bc8c46ed-6e16-4247-a72f-89169635c617" />
 
 cat fornested1.sh 
 ```bash
@@ -1058,6 +1062,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+<img width="639" height="204" alt="image" src="https://github.com/user-attachments/assets/04136392-b4d3-4be7-b805-34705c213147" />
 
  
 cat forbreak.sh 
