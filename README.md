@@ -1080,6 +1080,7 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
+<img width="637" height="161" alt="image" src="https://github.com/user-attachments/assets/e6dc102f-fd6f-45bc-bda5-89c5f82a4b81" />
 
 $ chmod 755 forbreak.sh
  
@@ -1105,7 +1106,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ <img width="636" height="178" alt="image" src="https://github.com/user-attachments/assets/4388efdc-606b-4e18-8226-1b9305ae495c" />
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -1119,6 +1121,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![Uploading image.png…]()
 
 
  cat exread1.sh
