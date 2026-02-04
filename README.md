@@ -140,28 +140,33 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
+<img width="362" height="82" alt="image" src="https://github.com/user-attachments/assets/c0a713ba-03dc-4ba2-bf7b-944b3114f041" />
 
 
 
 grep hello newfile 
 ## OUTPUT
 
+<img width="346" height="78" alt="image" src="https://github.com/user-attachments/assets/eeeb72f8-b3f6-42ec-9a98-967b3869c777" />
 
 
 
 grep -v hello newfile 
 ## OUTPUT
 
+<img width="348" height="71" alt="image" src="https://github.com/user-attachments/assets/3ef058c3-6378-4815-92ad-4b94f2287883" />
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
+<img width="441" height="100" alt="image" src="https://github.com/user-attachments/assets/876c8f21-ee04-4796-9ef5-6963a87f8341" />
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
+<img width="485" height="77" alt="image" src="https://github.com/user-attachments/assets/a0e5896f-c119-4390-97fb-7cb09d035b2a" />
 
 
 
@@ -169,10 +174,12 @@ cat newfile | grep -i -c "hello"
 grep -R ubuntu /etc
 ## OUTPUT
 
+<img width="1354" height="947" alt="image" src="https://github.com/user-attachments/assets/8f58cb25-7fc2-4c69-b1a2-73bc5dd49896" />
 
 
 grep -w -n world newfile   
 ## OUTPUT
+<img width="607" height="78" alt="image" src="https://github.com/user-attachments/assets/f4f3f3a8-dbd1-4b90-98e4-25e6ba44f368" />
 
 
 cat < newfile 
@@ -187,11 +194,7 @@ Linux is best in this World
 
 cat > newfile
 ```
-Hello world
-hello world
-Linux is world number 1
-Unix is predecessor
-Linux is best in this World
+c
 ^d
  ```
 egrep -w 'Hello|hello' newfile 
