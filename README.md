@@ -24,19 +24,14 @@ Testing the commands for the desired output.
 ### Create the following files file1, file2 as follows:
 cat > file1
 ```
-chanchal singhvi
-c.k. shukla
-s.n. dasgupta
-sumit chakrobarty
+mehul
+narayanan
 ^d
 ```
 cat > file2
 ```
-anil aggarwal
-barun sengupta
-c.k. shukla
-lalit chowdury
-s.n. dasgupta
+aishu
+toji
 ^d
 ```
 ### Display the content of the files
@@ -58,14 +53,33 @@ toji
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+```
+file1 file2 differ: byte 1, line 1
+
+``` 
 comm file1 file2
  ## OUTPUT
+```
+	aishu
+mehul
+narayan
+	toji
 
+
+```
  
 diff file1 file2
 ## OUTPUT
+```
+1,2c1,2
+< mehul
+< narayan
+---
+> aishu
+> toji
 
+
+```
 
 #Filters
 
@@ -88,18 +102,31 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
+```
+hel
+thi
 
+```
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
+```
+1001 
+1002 
+1003
 
+```
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+```
+Ram 
+tom 
+Joe 
+```
 
 cat < newfile 
 ```
