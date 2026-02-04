@@ -359,40 +359,84 @@ sed -n -e '2,/Joe/p' file23
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+```
+1002 | tom |  5000 | Admin
+1003 | Joe |  7000 | Developer
 
+```
 
 
 seq 10 
 ## OUTPUT
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
 
+```
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+```
+4
+5
+6
+```
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+```
+2
+3
+4
+```
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+```
+1
+2
+hello
+3
 
+```
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+```
+1
+hello
+2
+```
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+```
 
+1
+hello
+10
+```
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
+```
+$1001 | Ram | 10000 | HR
+$1001 | Ram | 10000 | HR
+$1002 | tom |  5000 | Admin
 
+```
 
 
 sed -n '2,4{s/$/*/;p}' file23
@@ -409,7 +453,13 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+```
+1001 | Ram | 10000 | HR
+1002 | tom |  5000 | Admin
+1003 | Joe |  7000 | Developer
+1004 | Sit |  7000 | Dev
+1005 | Sam |  5000 | HR
+```
 
 cat > file22
 ```
@@ -423,13 +473,28 @@ cat > file22
 uniq file22
 ## OUTPUT
 
-
+```
+1001 | Ram | 10000 | HR
+1002 | tom |  5000 | Admin
+1003 | Joe |  7000 | Developer
+1005 | Sam |  5000 | HR
+1004 | Sit |  7000 | Dev
+```
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+```
+1001 | RAM | 10000 | HR
+1001 | RAM | 10000 | HR
+1002 | TOM |  5000 | ADMIN
+1003 | JOE |  7000 | DEVELOPER
+1005 | SAM |  5000 | HR
+1004 | SIT |  7000 | DEV
+1003 | JOE |  7000 | DEVELOPER
+1001 | RAM | 10000 | HR
+```
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -445,17 +510,27 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+```
+www. yahoo. com
+www. google. com
+www. mrcet.... com
+^d
+```
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+```
+``www.yahoo.com
+www.google.com
+www.mrcet.com`
 
-
+```
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+<img width="946" height="1005" alt="image" src="https://github.com/user-attachments/assets/c0019015-1d01-480a-a8dd-8097cbcd336d" />
 
 
 mkdir backupdir
@@ -467,18 +542,11 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
+<img width="946" height="1005" alt="image" src="https://github.com/user-attachments/assets/2142f04e-e752-441c-8a67-51c2e79ed803" />
 
 tar -xvf backup.tar
 ## OUTPUT
-
-gzip backup.tar
-
-ls .gz
-## OUTPUT
- 
-gunzip backup.tar.gz
-## OUTPUT
-
+<img width="946" height="1005" alt="image" src="https://github.com/user-attachments/assets/1ee5ebb1-2c6d-402d-937c-a2f1fbf84faa" />
  
 # Shell Script
 ```
@@ -488,6 +556,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+<img width="471" height="89" alt="image" src="https://github.com/user-attachments/assets/90718a13-16dd-4895-ba4e-3a0bac7e64d7" />
 
  
 cat << stop > herecheck.txt
@@ -500,6 +569,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+<img width="471" height="89" alt="image" src="https://github.com/user-attachments/assets/e986b866-0084-47bb-b45d-50241e3b74a9" />
 
 
 cat < scriptest.sh 
@@ -538,26 +608,22 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+<img width="650" height="418" alt="image" src="https://github.com/user-attachments/assets/23af31d9-496f-4b2d-afc5-f34b955ef06e" />
 
  
 ls file1
 ## OUTPUT
-
+```
+file1
+```
 echo $?
 ## OUTPUT 
-./one
-bash: ./one: Permission denied
- 
-echo $?
-## OUTPUT 
- 
-abcd
- 
-echo $?
- ## OUTPUT
+
+```
+127
+```
 
 
- 
 # mis-using string comparisons
 
 cat < strcomp.sh 
@@ -587,13 +653,7 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
-
-
-chmod 755 strcomp.sh
- 
-./strcomp.sh 
-## OUTPUT
+<img width="646" height="250" alt="image" src="https://github.com/user-attachments/assets/d28bdced-d2e0-4cc7-aa72-5c00a898a5f8" />
 
 
 # check file ownership
@@ -621,6 +681,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+<img width="450" height="35" alt="image" src="https://github.com/user-attachments/assets/63ddc8dc-a1ef-4b58-b5d9-14afe5d3a1d3" />
 
 # check if with file location
 cat>ifnested.sh 
@@ -667,6 +728,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+<img width="449" height="69" alt="image" src="https://github.com/user-attachments/assets/a35b47ce-e491-47eb-930d-7aa282b80de8" />
 
 
 
@@ -711,6 +773,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+<img width="448" height="40" alt="image" src="https://github.com/user-attachments/assets/6fffc3e0-9a74-4801-a73f-2eff8207b9d5" />
 
 # check if a file
 cat > ifnested.sh 
@@ -760,6 +823,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+<img width="359" height="63" alt="image" src="https://github.com/user-attachments/assets/8079b73e-d580-4e8b-a0a8-574010014ff1" />
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -788,6 +852,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+<img width="459" height="45" alt="image" src="https://github.com/user-attachments/assets/0180d68f-aa30-484a-a3c7-00e792393d4b" />
 
 
 # testing compound comparisons
@@ -804,6 +869,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+<img width="301" height="35" alt="image" src="https://github.com/user-attachments/assets/d6ab3dae-e960-44e6-889d-ce89252e60e0" />
 
 # using the case command
 cat >casecheck.sh 
@@ -823,7 +889,10 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+ #output
+
+ <img width="457" height="45" alt="image" src="https://github.com/user-attachments/assets/b5c9e2bd-0b15-4f81-a359-153f1475749d" />
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -838,7 +907,8 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+ <img width="458" height="244" alt="image" src="https://github.com/user-attachments/assets/5f0fd825-41ea-4cee-8546-f3d635d0d861" />
+
  
 cat untiltest.sh 
 ```bash
@@ -851,7 +921,8 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
+ <img width="554" height="141" alt="image" src="https://github.com/user-attachments/assets/98641c44-24dd-421a-8c20-fbc660c6f525" />
+
  
  
 cat forin1.sh 
@@ -865,7 +936,8 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
+ <img width="629" height="198" alt="image" src="https://github.com/user-attachments/assets/e4222ab2-8025-41c9-848a-20d50c47df36" />
+
  
 cat forin2.sh 
 ```bash
@@ -878,7 +950,8 @@ done
  ```
  
 $ chmod 755 forin2.sh
- 
+ <img width="633" height="134" alt="image" src="https://github.com/user-attachments/assets/d3e2bbc9-d70e-454b-9df4-46481025668f" />
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -891,7 +964,8 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+ <img width="633" height="134" alt="image" src="https://github.com/user-attachments/assets/72827a21-6713-472b-aa67-64f64e405de0" />
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -915,6 +989,9 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+
+
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
