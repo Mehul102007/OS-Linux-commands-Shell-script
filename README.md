@@ -206,55 +206,65 @@ egrep -w 'Hello|hello' newfile
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-
+<img width="161" height="43" alt="image" src="https://github.com/user-attachments/assets/810c8dcf-6e4d-46ef-9ed0-a6d4ab8aabd3" />
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
 
+<img width="161" height="43" alt="image" src="https://github.com/user-attachments/assets/54913ea1-89e2-413f-9efc-a35164ac7f49" />
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
 
+<img width="161" height="28" alt="image" src="https://github.com/user-attachments/assets/a3320be5-d44a-4adb-b432-24d33952f08a" />
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
 
+<img width="162" height="44" alt="image" src="https://github.com/user-attachments/assets/db5123e3-73f7-45c6-b105-a92611a6313d" />
 
 egrep '(World$)' newfile 
 ## OUTPUT
 
+<img width="162" height="44" alt="image" src="https://github.com/user-attachments/assets/ddac6d2b-31d3-4534-8ce9-2d3fd0dc140a" />
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
-
+<img width="316" height="69" alt="image" src="https://github.com/user-attachments/assets/b2c46535-4b5a-458c-ae1e-f604da739bff" />
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
-
+<img width="317" height="28" alt="image" src="https://github.com/user-attachments/assets/bb28c610-4e07-4b6d-96ce-81f6ece3a4dd" />
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
 
+
+<img width="317" height="28" alt="image" src="https://github.com/user-attachments/assets/94644706-cc4e-40f4-b5ab-85c304dc26aa" />
+
+
 egrep 'Linux.*World' newfile 
 ## OUTPUT
 
+<img width="317" height="28" alt="image" src="https://github.com/user-attachments/assets/a576e550-cecd-45a3-bda9-fda5dfb57eae" />
 
 egrep l{2} newfile
 ## OUTPUT
 
 
+<img width="315" height="48" alt="image" src="https://github.com/user-attachments/assets/10cc8e51-cb9a-406d-8d88-63713ea13cf7" />
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
 
-
+<img width="378" height="92" alt="image" src="https://github.com/user-attachments/assets/a1ddfdbe-ab51-453c-a086-6204b5502d79" />
 cat > file23
 ```
 1001 | Ram | 10000 | HR
@@ -272,37 +282,79 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 
-
+```
+1002 | tom |  5000 | Admin
+```
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-
+```
+1001 | Ram | 10000 | HR
+```
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+```
+1001 | Sita | 10000 | HR
+1001 | Sita | 10000 | HR
+1002 | tom |  5000 | Admin
+1003 | Joe |  7000 | Developer
+1005 | Sam |  5000 | HR
+1004 | Sit |  7000 | Dev
+1003 | Joe |  7000 | Developer
+1001 | Sita | 10000 | HR
+```
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+```
+1001 | Ram | 10000 | HR
+1001 | Sita | 10000 | HR
+1002 | tom |  5000 | Admin
+1003 | Joe |  7000 | Developer
+1005 | Sam |  5000 | HR
+1004 | Sit |  7000 | Dev
+1003 | Joe |  7000 | Developer
+1001 | Ram | 10000 | HR
+```
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+```
+1001 | Ram | 10000 | HR
+1001 | Sita | 10000 | HR
+1002 | tom |  5000 | Admin
+1003 | Joe |  7000 | Developer
+1005 | Sam |  5000 | HR
+1004 | Sit |  7000 | Dev
+1003 | Joe |  7000 | Developer
+1001 | Ram | 10000 | HR
+```
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-
+```
+1001 | Ram | 10000 | HR
+1001 | Ram | 10000 | HR
+1002 | tom |  5000 | Admin
+1003 | Joe |  7000 | Developer
+1005 | Sam |  5000 | HR
+```
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
-
+```
+1001 | Ram | 10000 | HR
+1001 | Ram | 10000 | HR
+1002 | tom |  5000 | Admin
+1003 | Joe |  7000 | Developer
+```
 
 
 sed -n -e '/tom/,/Joe/p' file23
